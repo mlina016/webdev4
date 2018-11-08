@@ -171,6 +171,8 @@ request.then(function(values){
         document.getElementById("mouseCoordinatesBox").innerHTML="newtext";
         
     }
+
+    map.addMouseCoordinates(map, style = 'detailed', epsg = null, proj4string = null, native.crs = False)
   	//  - second, register an event listener with the map
   	//    (something like map.on(....))
     map.on('mousemove', mapHoverHandler);
